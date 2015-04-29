@@ -2,8 +2,8 @@
 <% @cds.each() do |cd| %>
 <form action="/artist" method="post" class="form">
   <label for="artist"><a href="/collection/<%=cd.id() %>"><%= cd.title() %></a></li></label>
-  <input id="yes" name="yes" type="radio" value= cd > Yes
-  <input id="no" name="no" type="radio" value= cd > No
+  <input id="yes" name="yes" type="radio" value= <%= cd.id() %>> Yes
+  <input id="no" name="no" type="radio" value= <%= cd.id() %>> No
   <p></p>
     <% end %>
 
