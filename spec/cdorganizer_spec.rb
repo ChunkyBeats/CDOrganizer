@@ -1,5 +1,6 @@
 require('rspec')
 require('cdorganizer')
+require('add_artist')
 
 describe (CD) do
   before() do
@@ -28,12 +29,12 @@ describe (CD) do
     end
   end
 
-  describe("#add_artist") do
-    it("adds an artist for the CD in an array") do
-    test_cd = CD.new("Doggystyle")
-    test_cd.save()
-    test_cd.add_artist("Snoop Dogg")
-    expect(CD.sort_by_artist()).to(eq({"Snoop Dogg" => test_cd}))
-    end
-  end
+  # describe("#add_artist") do
+  #   it("adds an artist for the CD in an array") do
+  #   test_cd = CD.new("Doggystyle")
+  #   test_cd.save()
+  #   test_cd.add_artist("Snoop Dogg")
+  #   expect(CD.sort_by_artist()).to(eq({"Snoop Dogg" => test_cd}))
+  #   end
+  # end
 end
