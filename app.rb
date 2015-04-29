@@ -56,11 +56,10 @@ post("/artist") do
   answer = params.fetch('yes')
   binding.pry
   artist = Artist.new(artist).save()
-  if answer == "yes"
     cd_array.push(answer)
+    binding.pry
   cd_array.each do |cd|
     artist.add_cd(cd)
-  end
 end
   erb(:success_artist)
 end
