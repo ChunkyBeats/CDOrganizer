@@ -1,0 +1,8 @@
+<h1> Success!</h1>
+<h1> Your Artists : </h1>
+<ul>
+
+  <% @test_artist.each() do |artist| %>
+  <li><a href="/artist_collection/<%=artist.id() %>"><%= artist.name() %></a></li>
+  <% end %>
+</ul>

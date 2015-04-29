@@ -1,0 +1,8 @@
+<h1> Success!</h1>
+<h1> Your collection : </h1>
+<ul>
+
+    <% @cds.each() do |cd| %>
+    <li><a href="/collection/<%=cd.id() %>"><%= cd.title() %></a></li>
+    <% end %>
+  </ul>

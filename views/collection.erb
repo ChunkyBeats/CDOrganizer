@@ -1,0 +1,6 @@
+<h1> Collection </h1>
+<ul>
+  <% @cds.each do |cd| %>
+  <li><a href="/collection/<%=cd.id() %>"><%= cd.title() %></a></li>
+   <% end %>
+</ul>

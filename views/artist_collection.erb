@@ -1,0 +1,10 @@
+<h3> These are the Artists in your Cd Collection:</h3>
+
+<ul>
+  <% @artist.name().each do |name_of_artist| %>
+  <li><a href="/artist_collection<%= name_of_artist.id() %>"><%= name_of_artist.name() %></a></li>
+  <% end %>
+</ul>
+
+<a href="/artist_collection/new">Add a new Artist</a>
+<a href="/"> Return to Home </a>

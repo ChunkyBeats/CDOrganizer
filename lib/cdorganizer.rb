@@ -1,8 +1,14 @@
 class CD
   @@collection = []
 
+
   define_method(:initialize) do |title|
     @title = title
+    @id = @@collection.length().+(1)
+  end
+
+  define_method(:id) do
+    @id
   end
 
   define_method(:title) do
@@ -20,6 +26,7 @@ class CD
   define_singleton_method(:clear) do
     @@collection=[]
   end
+
 
 
 
