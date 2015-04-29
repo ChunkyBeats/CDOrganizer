@@ -1,0 +1,9 @@
+<h3> Here are all the works by this artist:</h3>
+
+<ul>
+  <% @cds.each() do |cd| %>
+  <li><a href="/collection/<%= cd.id() %>"><%= cd.title() %>></a></li>
+  <% end %>
+</ul>
+
+<a href="/"> Return to Main Page </a>

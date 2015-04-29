@@ -4,5 +4,8 @@
 
   <% @test_artist.each() do |artist| %>
   <li><a href="/artist_collection/<%=artist.id() %>"><%= artist.name() %></a></li>
+
+  <li><a href="/artist_collection/<%= artist.id() %>/artist_works"><%= artist.name() %> Select CDs Made by This Artist</a> </li>
+  
   <% end %>
 </ul>
